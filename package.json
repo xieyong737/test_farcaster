@@ -1,19 +1,20 @@
 {
-  "name": "template-vercel",
+  "name": "test-farcaster",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "frog vercel-build",
-    "dev": "frog dev",
+    "dev": "frog dev --port 9527",
+    "serve": "tsx src/index.tsx",
     "deploy": "vercel"
   },
   "dependencies": {
+    "@hono/node-server": "^1",
     "frog": "latest",
     "hono": "^4"
   },
   "devDependencies": {
-    "tsx": "^4.7.1",
-    "typescript": "^5.3.3",
-    "vercel": "^32.4.1"
+    "@types/node": "^20.11.17",
+    "tsx": "^3.12.2",
+    "vercel": "^39.2.2"
   }
 }
